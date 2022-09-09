@@ -1,0 +1,263 @@
+main {
+
+    background-color: hsl(185, 41%, 84%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+body {
+
+    margin: 0;
+    font-family: 'Space Mono', monospace;
+
+}
+
+.logo {
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.app-container {
+
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 25px 25px 0 0;
+    width: 295px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+    
+}
+
+input {
+
+    
+    font-size: 1.4em;
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: hsl(183, 100%, 15%);
+    font-family: 'Space Mono', monospace;
+    text-align: right;
+    border-radius: 5px;
+    
+}
+
+.input {
+
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    padding-right: 10px;
+}
+
+.tip-btn {
+
+    font-size: 1.4em;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(183, 100%, 15%);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Space Mono', monospace;
+    cursor: pointer;
+    
+}
+
+.tip-btn.active {
+
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+
+}
+
+.heading {
+
+    
+    color: hsl(184, 14%, 56%);
+        
+}
+
+#custom {
+
+    text-align: center;
+}
+
+::placeholder {
+
+    color: hsl(186, 14%, 43%);
+}
+
+.grid-container {
+    grid-template-columns: repeat(2, 140px);
+    display: grid;
+    grid-gap: 15px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+
+}
+
+
+
+.input-container {
+
+
+}
+
+
+.output-container {
+
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-top: 30px;
+    width: 95%;
+    
+
+    
+
+}
+
+#reset-btn {
+
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-family: 'Space Mono', monospace;
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(172, 67%, 45%);
+    border: none;
+    border-radius: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    cursor: pointer;
+    transition: .15s ease;
+
+}
+
+#reset-btn:hover {
+
+    background-color: hsl(185, 41%, 84%);
+
+}
+
+.output-heading {
+
+    color: hsl(0, 0%, 100%);
+    font-size: .9em;
+    
+}
+
+.output-person {
+
+    color:hsl(184, 14%, 56%);
+    font-size: .8em;
+}
+
+#tip-am {
+
+    margin-bottom: 20px;
+}
+
+
+.amount {
+    
+    float: right;
+    font-size: 2.2em;
+    color: hsl(172, 67%, 45%);
+    
+}
+
+
+@media only screen and (min-width: 1150px) {
+
+
+    .app-container {
+
+        flex-direction: row;
+        width: 850px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        gap: 50px;
+        padding: 30px;
+
+        
+    }
+
+        main {
+        }
+
+
+        .logo {
+
+            height:  auto;
+            position: relative;
+            bottom: 75px;
+
+        
+        }
+
+        .grid-container {
+
+            grid-template-columns: repeat(3, 120px);
+
+
+        }
+
+
+        .input-container {
+
+            height: 100%;
+            width: 50%;
+            
+
+        }
+    
+        .output-container {
+
+            height: 85%;
+            width: 50%;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            padding: 30px;       
+                 
+            
+        }
+
+        #tip-am {
+
+            margin-bottom: 50px;
+        }
+
+
+        .test {
+
+            margin-top: 10px;
+        }
+
+        #test {
+
+            margin-bottom: 10px;
+        }
+    
+}
