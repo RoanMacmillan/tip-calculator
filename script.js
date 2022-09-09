@@ -14,6 +14,7 @@ let numOfPeople = document.getElementById('people');
 let tipPercent = document.getElementById('tipbut');
 let buttons = document.querySelectorAll(".tip-btn");
 const buttonSelected = document.getElementsByClassName('active');
+const customTip = document.getElementById('custom');
 
 let tipValue = document.getElementById('tip-amnt');
 
@@ -27,11 +28,22 @@ function addTip() {
 
 
    
-    let tipPercentage = buttonSelected[0].value;
+    let tipPercentage;
 
 
-    let tipAmount = (billInput.value * tipPercentage) / numOfPeople.value;
+    let tipAmount;
 
+
+    if(customTip.classList.contains('active')){
+
+        tipPercentage = customTip.value;
+
+    } else {
+
+        tipPercentage = buttonSelected[0].value;
+    }
+
+    tipAmount = (billInput.value * tipPercentage) / numOfPeople.value;
 
 
     tipValue.innerHTML = tipAmount;
@@ -55,7 +67,20 @@ function calculateTip () {
 
 }
 
+function calculateCustomTip () {
 
+    buttons.forEach((button) => {
+
+        button.classList.remove('active');
+
+    });
+
+    this.classList.add('active');
+
+    addTip();
+
+
+}
 
 
 
@@ -75,3 +100,4 @@ buttons.forEach((button) => {
 })
 
 
+customTip.addEventListener('keyup', calculateCustomTip);
