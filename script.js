@@ -21,7 +21,7 @@ let tipValue = document.getElementById('tip-amnt');
 /* Functions */
 
 
-/* Calculates totals */
+/* Calculates totals/tips */
 
 function addTip() {
 
