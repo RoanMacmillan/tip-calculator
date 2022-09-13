@@ -26,6 +26,12 @@ body {
 
 }
 
+#people {
+
+
+    
+}
+
 
 .app-container {
 
@@ -36,8 +42,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    
     
 }
 
@@ -66,6 +70,26 @@ input {
     padding-right: 10px;
 }
 
+
+
+
+.input-icon {
+
+    position: relative;
+    top: 40px;
+    left: 15px;
+}
+
+
+#error {
+
+    color: orange;
+    float: right;
+    position: relative;
+    top: 20px;
+    display: none;
+}
+
 .tip-btn {
 
     font-size: 1.4em;
@@ -80,6 +104,13 @@ input {
     
 }
 
+button:hover {
+
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+
+}
+
 .tip-btn.active {
 
     background-color: hsl(172, 67%, 45%);
@@ -87,11 +118,28 @@ input {
 
 }
 
+
+
 .heading {
 
     
     color: hsl(184, 14%, 56%);
+
         
+}
+
+#bill-heading {
+
+    position: relative;
+    top: 20px;
+}
+
+
+
+#people-heading {
+
+    position: relative;
+    top: 20px;
 }
 
 #custom {
@@ -99,6 +147,12 @@ input {
     text-align: center;
 }
 
+#custom:hover {
+
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+
+}
 ::placeholder {
 
     color: hsl(186, 14%, 43%);
@@ -149,9 +203,9 @@ input {
     border-radius: 5px;
     padding-top: 7px;
     padding-bottom: 7px;
-    cursor: pointer;
+    cursor: not-allowed;
     transition: .15s ease;
-
+    opacity: 0.2;
 }
 
 #reset-btn:hover {
