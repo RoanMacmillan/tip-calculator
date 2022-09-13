@@ -31,22 +31,24 @@
       
       <div class="input-container">
 
-        <span class="heading">Bill</span><br>
+        <span id="bill-heading" class="heading">Bill</span><br>
+        <img class="input-icon" src="./images/icon-dollar.svg">
+
         <input class="input" type="text" id="bill" placeholder="0"><br>
 
         <span class="heading">Select Tip %</span>
 
         <div class="grid-container">
 
-            <button value="0.05" id="tipbut" class="tip-btn">5%</button>
+            <button value="5" id="tipbut" class="tip-btn">5%</button>
 
-            <button value ="0.10" class="tip-btn">10%</button>
+            <button value ="10" class="tip-btn">10%</button>
 
-            <button value="0.15" class="tip-btn">15%</button>
+            <button value="15" class="tip-btn">15%</button>
 
-            <button value=".25" class="tip-btn">25%</button>
+            <button value="25" class="tip-btn">25%</button>
 
-            <button value=".50" class="tip-btn">50%</button>
+            <button value="50" class="tip-btn">50%</button>
 
             <input class="tip-btn" type="text" id="custom" placeholder="Custom" maxlength="2">
 
@@ -54,8 +56,9 @@
 
         </div>
         
-        <span class="heading">Number of People</span> <!--<span id="error">Can't be 0</span>-->
+        <span id="people-heading" class="heading">Number of People</span> <span id="error">Can't be 0</span>
         <br>
+        <img class="input-icon" src="./images/icon-person.svg">
         <input class="input" type="text" id="people" placeholder="0" maxlength="4">
 
       </div>
@@ -73,7 +76,7 @@
 
         <div class="output">
           <span class="output-heading">Total Cost</span>
-          <span class="amount">$0.00</span>
+          <span id="total-cost" class="amount">$0.00</span>
 
           <br>
           <span class="output-person">/ person</span>
@@ -82,7 +85,7 @@
 
         </div>
         <div id="test" class="output">
-          <button id="reset-btn">Reset</button>
+          <button disabled="disabled" id="reset-btn">Reset</button>
         </div>
       </div>
 
